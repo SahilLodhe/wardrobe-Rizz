@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Upload } from './components/upload';
 import { Login } from "./pages/login"
 import { Navbar } from './components/navbar';
 import ImageSlider from './components/Slider/ImageSlider';
@@ -16,6 +17,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         
           {/* <Route path="/createcomment" element={<CreateComment />} /> */}
+          <Route path="/upload" element={<Upload/>}/>
         </Routes>
       </Router>
     </div>
