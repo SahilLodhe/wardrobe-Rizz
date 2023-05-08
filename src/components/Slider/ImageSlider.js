@@ -95,7 +95,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
       <section className="slider">
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-        <h1>GLOBAL FASHION</h1>
+        <h1><b> GLOBAL FASHION</b></h1>
         {articles.map((slide, index) => {
           return (
             <div
@@ -104,10 +104,10 @@ if (!Array.isArray(slides) || slides.length <= 0) {
             >
               {index === current && (
                 <>
+                  <img src={slide.image} alt="travel image" className="image" />
                   <a href={slide.url}>
                     <h1>{slide.title}</h1>
                   </a>
-                  <img src={slide.image} alt="travel image" className="image" />
                 </>
               )}
             </div>
@@ -118,7 +118,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
       <section className="slider">
         <FaArrowAltCircleLeft className="left-arrow1" onClick={prevSlide1} />
         <FaArrowAltCircleRight className="right-arrow1" onClick={nextSlide1} />
-        <h1>LOCAL FASHION</h1>
+        <h1><b>LOCAL FASHION</b></h1>
         {articles1.map((slide, index) => {
           return (
             <div
@@ -127,10 +127,10 @@ if (!Array.isArray(slides) || slides.length <= 0) {
             >
               {index === current1 && (
                 <>
+                  <img src={slide.image} alt="travel image" className="image" />
                   <a href={slide.url}>
                     <h1>{slide.title}</h1>
                   </a>
-                  <img src={slide.image} alt="travel image" className="image" />
                 </>
               )}
             </div>
