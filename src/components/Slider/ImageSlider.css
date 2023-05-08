@@ -54,7 +54,7 @@
   }
 
   .slide a{
-    position: absolute;
+    position: relative;
     bottom: 1rem;
     left: 1rem;
     color: #6A2B05;
