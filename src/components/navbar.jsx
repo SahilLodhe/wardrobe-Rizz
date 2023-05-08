@@ -11,7 +11,9 @@ export const Navbar = () => {
         await signOut(auth);
     }
     return(
-        <div className="navbar">
+      <div className="navbar">
+        
+        
             <div className="links">
                 <Link to="/">Home</Link>
                 {/* <Link to="/login">Login</Link> */}
@@ -20,7 +22,13 @@ export const Navbar = () => {
                     <Link to="/">Logout</Link> 
                 )}
                 {/* if !user means if user state is invalid(user isn't logged in), then display the log in link on the navbar, else displat teh create post link on the navbar */}
-            </div>
+        </div>
+        
+        {user ? (<Link to="/upload">Add Clothes</Link>) : 
+        (
+          <Link to="/login">Add Clothes</Link>
+          )}
+        
             <div className="user">
         {user && (
           <>
