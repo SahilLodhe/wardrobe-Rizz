@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  color:  #121212;
+  background-color: lightcoral;
 }
 
 body {
@@ -92,4 +94,4 @@ body {
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
-}
+} 
